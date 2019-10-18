@@ -4,8 +4,9 @@
 .navigation-wrapper {
   margin-top: 40px;
 }
-.row{
-    padding-bottom: 40px;
+.row {
+  padding-bottom: 40px;
+  justify-content: space-evenly;
 }
 .basic-info-img {
   width: 450px;
@@ -20,27 +21,38 @@
   padding-left: 150px;
 }
 .info-divs {
-  width: 250px;
-  height: 350px;
   background-color: yellowgreen;
   align-self: flex-end;
   text-align: center;
   border-radius: 30px;
 }
 .info-divs > p {
-  position: absolute;
-  top: 20%;
-  left: 0%;
+  margin-top: 5px;
   font-size: 18px;
   margin-left: 25px;
   margin-right: 25px;
 }
-.about-me {
-  align-self: flex-end;
+.about-me,
+.projects,
+.technologies {
+  align-self: center;
   text-align: center;
 }
 .about-me::after {
   content: url(img/images.png);
+}
+.projects::after {
+  content: url(img/under-construction.png);
+}
+.technologies::after{
+  content: url(img/images\ \(1\).png);
+}
+button {
+  margin: 7px;
+}
+.thec-table{
+  align-self: center;
+  text-align: center;
 }
 
 /* .nav::after {
