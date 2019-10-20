@@ -1,12 +1,38 @@
 .header-content-wraper {
   margin-top: 80px;
 }
+.logo > img {
+  height: 80px;
+  width: 100px;
+}
+/* body{
+  background: url(img/fundo-de-tecnologia-abstrato-branco-cinza_42421-143.jpg) center center no-repeat;
+  background-size: cover;
+} */
+.about-me{
+  box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
+  background-color: white;
+  border-radius: 20px;
+}
 .navigation-wrapper {
   margin-top: 40px;
+  align-content: space-around;
+  border-radius: 20px;
+  box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
+  background-color: white;
+}
+.container,.technologies,.projects{
+  box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
+  background-color: white;
+  border-radius: 20px;
+}
+button:hover {
+  box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
 }
 .row {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   justify-content: space-evenly;
+  align-items: center;
 }
 .basic-info-img {
   width: 450px;
@@ -18,14 +44,18 @@
   text-align: center;
 }
 .basic-info > h3 {
-  padding-left: 150px;
+  padding-left: 275px;
+  font-size: 2rem;
 }
-.info-divs {
+.basic-info > h1 {
+  font-size: 4rem;
+}
+/* .info-divs {
   background-color: yellowgreen;
   align-self: flex-end;
   text-align: center;
   border-radius: 30px;
-}
+} */
 .info-divs > p {
   margin-top: 5px;
   font-size: 18px;
@@ -44,18 +74,37 @@
 .projects::after {
   content: url(img/under-construction.png);
 }
-.technologies::after{
+.technologies::after {
   content: url(img/images\ \(1\).png);
 }
 button {
   margin: 7px;
 }
-.thec-table{
+.thec-table {
   align-self: center;
   text-align: center;
 }
-
-/* .nav::after {
-  content: url(img/1537302159annuval-maintance.png);
-  position: relative;
-} */
+.card> img {
+  height: 100px;
+  width: 120px;
+  align-self: center;
+}
+.card{
+  align-self: center;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+}
+.contact-me-section{
+  box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
+  background-color: white;
+  border-radius: 20px;
+}
+.contact-me-div {
+  text-align: center;
+}
+.contact-me-div >a >img{
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+}
