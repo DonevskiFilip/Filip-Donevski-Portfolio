@@ -1,14 +1,20 @@
 .header-content-wraper {
   margin-top: 80px;
 }
+p{
+  font-family: 'Monda', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Monda', sans-serif;
+}
 .logo > img {
   height: 80px;
   width: 100px;
 }
-/* body{
-  background: url(img/fundo-de-tecnologia-abstrato-branco-cinza_42421-143.jpg) center center no-repeat;
+body{
+  background: url(img/blue-background.jpg) center center no-repeat;
   background-size: cover;
-} */
+}
 .about-me{
   box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
   background-color: white;
@@ -20,11 +26,13 @@
   border-radius: 20px;
   box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
   background-color: white;
+  opacity: 0.8;
 }
 .container,.technologies,.projects{
   box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
   background-color: white;
   border-radius: 20px;
+  opacity: 0.8;
 }
 button:hover {
   box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
@@ -51,10 +59,7 @@ button:hover {
   font-size: 4rem;
 }
 /* .info-divs {
-  background-color: yellowgreen;
-  align-self: flex-end;
-  text-align: center;
-  border-radius: 30px;
+opacity: 0;
 } */
 .info-divs > p {
   margin-top: 5px;
@@ -62,11 +67,28 @@ button:hover {
   margin-left: 25px;
   margin-right: 25px;
 }
+.info-div-about-me{
+opacity: 0;
+ transition-property: opacity;
+ transition-duration: .5s;
+ transition-timing-function: linear;
+}
+.about-me-section:hover .info-div-about-me{
+  opacity: 1;
+}
+.info-div-about-me > p {
+  margin-top: 5px;
+  font-size: 18px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
 .about-me,
 .projects,
 .technologies {
   align-self: center;
   text-align: center;
+  opacity: 0.8;
 }
 .about-me::after {
   content: url(img/images.png);
@@ -79,6 +101,7 @@ button:hover {
 }
 button {
   margin: 7px;
+  font-family: 'Monda', sans-serif;
 }
 .thec-table {
   align-self: center;
@@ -94,11 +117,13 @@ button {
   text-align: center;
   border-radius: 20px;
   border: none;
+  opacity: 0.8;
 }
 .contact-me-section{
   box-shadow: 10px 5px 15px rgba(128, 128, 128, 0.555);
   background-color: white;
   border-radius: 20px;
+  opacity: 0.8;
 }
 .contact-me-div {
   text-align: center;
@@ -108,3 +133,33 @@ button {
   width: 40px;
   height: 40px;
 }
+
+
+
+/* @keyframes divOpacity{
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0.3;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 1;
+     animation-delay: 2;
+  }
+}
+
+body:hover .info-div-about-me  {
+  animation-name: divOpacity;
+  animation-duration: 1s;
+  animation-timing-function:ease;
+anima
+  /* animation-timing-function: ease; */
+  
+/*  */
